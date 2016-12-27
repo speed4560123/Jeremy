@@ -128,7 +128,7 @@ public class MySorterTest {
 	@Test
 	public void testSort7() {
 		double[] input = { 1, 2, -99 };
-		double[] expected = { 1, 2, -99 };
+		double[] expected = { -99, 1, 2 };
         MySorter sorter = new MySorter();
         sorter.sort(input);
         for (double i: input) 
