@@ -8,6 +8,8 @@ public class MySorter
 		{
 			for (int j = 0; j < d.length - i - 1; j++)
 			{
+				if(d[j+1] < 0 || d[j]<0)//不讓負數輸出，要中斷的是SWAP FUNCTION
+				return;
 				if (d[j] > d[j + 1])
 				{
 					swap(d, j, j+1);
@@ -21,21 +23,6 @@ public class MySorter
 		double temp = d[k];
 		d[k] = d[s];
 		d[s] = temp;
-	}
-	public static double[] ArrayReturn()
-	{
-		return new double[] {};
-	}
-	public static void main(String[] args)
-	{
-		double input[] = {  100, 10.10, 2.1, 2.0, 1.1, 1.0 };
-        MySorter sorter = new MySorter();
-        sorter.sort(input);
-        for (double i: input) 
-        {
-        	 System.out.print(i + " ");
-        }
-
 	}
 }
 

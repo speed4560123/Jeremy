@@ -49,91 +49,67 @@ public class MySorterTest {
 
 	@Test
 	public void testSort1() {
-		double[] input = {};
-		double[] expected = {};
+		double[] input = tc1[0];
+		double[] expected = tc1[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort2() {
-		double[] input = { 1.0 };
-		double[] expected = { 1.0 };
+		double[] input = tc2[0];
+		double[] expected = tc2[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort3() {
-		double[] input = { 1.0, 1.1, 2.0, 2.1, 10.10, 100 };
-		double[] expected = { 1.0, 1.1, 2.0, 2.1, 10.10, 100 };
+		double[] input = tc3[0];
+		double[] expected = tc3[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort4() {
-		double[] input = { 100, 10.10, 2.1, 2.0, 1.1, 1.0 };
-		double[] expected = { 1.0, 1.1, 2.0, 2.1, 10.10, 100 };
+		double[] input = tc4[0];
+		double[] expected = tc4[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort5() {
-		double[] input = { 2.0, 2.1, 1.1, 10.10, 100, 1.0 };
-		double[] expected = { 1.0, 1.1, 2.0, 2.1, 10.10, 100 };
+		double[] input = tc5[0];
+		double[] expected = tc5[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort6() {
-		double[] input = { 1, 2, 5, 4, 3 };
-		double[] expected = { 1, 2, 3, 4, 5 };
+		double[] input = tc6[0];
+		double[] expected = tc6[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
-        for (double i: input) 
-        {
-        	 sorter.ArrayReturn();
-        }
         assertArrayEquals(expected, input);
 	}
 	
 	@Test
 	public void testSort7() {
-		double[] input = { 1, 2, -99 };
-		double[] expected = { -99, 1, 2 };
+		double[] input = tc7[0];
+		double[] expected = tc7[1];
         MySorter sorter = new MySorter();
         sorter.sort(input);
         for (double i: input) 
         {
-        	 sorter.ArrayReturn();
+        	 System.out.print(i + " ");
         }
         assertArrayEquals(expected, input);
 	}
