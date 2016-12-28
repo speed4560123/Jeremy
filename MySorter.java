@@ -8,7 +8,7 @@ public class MySorter
 		{
 			for (int j = 0; j < d.length - i - 1; j++)
 			{
-				if(d[j+1] < 0 || d[j]<0)//不讓負數輸出，要中斷的是SWAP FUNCTION
+				if(d[j+1] < 0 || d[j]<0)
 				return;
 				if (d[j] > d[j + 1])
 				{
